@@ -1,0 +1,262 @@
+---
+title: "Navigating ‘safe’ and ‘non-safe’ queer spaces: A study of style-shifting in Singapore "
+subtitle: "Jill Khoo and Christian Ilbury"
+author: "Yhosep Barba"
+institute: "Rutgers University"
+date: "2025/04/03"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```{r}
+#| echo: false 
+#| warning: false 
+#| message: false
+library(here)
+```
+# <span style="color: red;">Introduction</span>
+
+- Singapore's political and societal agenda prioritize heteronormative scripts for gender performance, shaping the expectations around gender and sexuality in the city-state.
+
+- Due to this heteronormative environment, LGBTQ+ folks in Singapore are often reluctant to openly express their queer identities. (Pak, 2021, 2023; Pak & Hiramoto, 2021)
+
+- This study examines the linguistic practices of two self-identified gay men in Singapore: Rui and Kenni.The authors focuse on their style-shifting between queer-friendly ('safe') and heteronormative ('unsafe') contexts.
+
+- Their analysis centers on stylistic variation in two phonetic features—pitch and /s/, which have been previously linked to a stereotypical 'gay style.' (Boyd, Fruehwald & Hall-Lew, 2021; Campbell-Kibler, 2011)
+
+---
+# <span style="color: red;">Objectives</span>
+
+- To contribute to a non-Western view on the stylistic construction of queer identities in heteronormative and queer-friendly spaces (Gratton, 2016; Podesva, 2007; Podesva & Van Hofwegen, 2016).
+
+- To demonstrate how the social meanings of linguistic features, like fronted /s/ and pitch, depend on specific contexts and can be recontextualize within specific communities (Bauman & Briggs, 1990; Calder, 2019).
+
+- To contribute to conversations on social justice and LGBTQ+ rights in Singapore, promoting acceptance and equality (Pak, 2021, 2023; Pak & Hiramoto, 2021).
+---
+# <span style="color: red;">Methods</span>
+
+## Participants
+
+- This study focuses on two cisgender gay men, Rui and Kenni, both in their mid-20s and living and working in Singapore. 
+
+- Rui (28, Malay) is an art teacher - training to be a state schoolteacher. He  also works as a practicing artist and a DJ at queer events. 
+
+- Kenni (25, Chinese) works in marketing and creative roles for a family business.He also DJs and engages in artistic activities.
+
+---
+## Data Collection
+
+- The study data consists of self-recordings and informal interviews with Rui and Kenni (2022).
+
+- They identified their work environments as heteronormative and situations with close friends as queer-friendly spaces. 
+
+- Both Rui and Kenni self-recorded themselves in these settings using smartphones.
+
+- Semi-structured interviews via Zoom explored their experiences as gay men in Singapore, awareness of style-shifting, and connection to the queer community.
+
+- Once the data was collected, transcribed, and coded, the data were analyzed to obtain the values of 4 specific variables: mean f0, f0 range and the COG and skewness measures of /s/, following Cuddy (2019).
+---
+# <span style="color: red;">To Analize Pitch</span>
+
+- To determine f0 measurements for each speaker, a Praat script was used to extract pitch frames from the audio recordings. 
+
+- A density plot was created in R to identify the modal pitch range, with a final range set at 70–250Hz to exclude outliers like creaky voice (<70Hz) and falsetto (240–634Hz). 
+
+- The f0 data was then drawn from the 5% to 95% quantile to exclude further outliers. The mean, maximum, minimum, and range of f0 values were then extracted for each recording.
+###Note
+- Overall, Pitch variation can indicate different meanings, with lower pitch and less variability often linked to masculinity, and higher pitch and variability to femininity (Munson, 2007; Smyth et al., 2003).
+---
+# <span style="color: red;">To Analize /s/</span>
+
+- For /s/, all tokens were manually marked in the TextGrids.
+
+- Tokens adjacent to other sibilants were excluded due to unclear boundary distinctions. 
+
+- Each /s/ token was bandpass filtered (1000–22050Hz) to remove background noise. 
+
+- A Praat script was used to extract four spectral moments for each /s/ token: centre of gravity, standard deviation, skewness, and kurtosis. In total, 528 tokens were analyzed from the four recordings.
+###Note
+- Overall, gay men tend to produce more front and fricated productions of /s/, acoustically observable as a fricative with a higher peak frequency, higher centre of gravity (COG) and a negative spectral skew (Boyd et al. 2021, Levon, Pharao & Maegaard 2017).
+---
+# <span style="color: red;">Results</span>
+##Pitch - Kenni’s Results
+
+- As shown in Table 2 (Figure 1), Kenni has a significantly higher mean f0 in the queer-friendly setting (partner) (107Hz) compared to the heteronormative setting (business meeting) (95Hz) (t=58.834, p<0.001). 
+- His f0 range is also wider in the safe setting (90.4Hz) than in the heteronormative context (61.5Hz). 
+
+```{r, out.width="85%", fig.align="center"}
+#| echo: false 
+#| warning: false 
+#| message: false
+knitr::include_graphics("/Users/diegomedina/Desktop/presentation/charts/Kenni_chart_pitch.png")
+```
+
+---
+```{r, out.width="85%", fig.align="center"}
+#| echo: false 
+#| warning: false 
+#| message: false
+knitr::include_graphics("/Users/diegomedina/Desktop/presentation/charts/Kenni_chart_pitch_2.png")
+```
+
+---
+
+# <span style="color: red;">Results</span>
+##Pitch - Rui’s Results
+
+- Rui's mean f0 is 132.9Hz in the heteronormative setting (teaching a class) and 130.2Hz in the queer-friendly setting (gathering with friends) (see Table 3, Figure 2). 
+- His f0 range is slightly wider in the queer-friendly context (106.9Hz) compared to the classroom setting (93Hz), though overall, his f0 observations are similar across both contexts.
+
+```{r, rout.width="85%", fig.align="center"}
+#| echo: false 
+#| warning: false 
+#| message: false
+knitr::include_graphics("/Users/diegomedina/Desktop/presentation/charts/Rui_chart_pitch.png")
+```
+---
+```{r, out.width="85%", fig.align="center"}
+#| echo: false 
+#| warning: false 
+#| message: false
+knitr::include_graphics("/Users/diegomedina/Desktop/presentation/charts/Rui_chart_pitch_2.png")
+```
+
+---
+# <span style="color: red;">Results</span>
+## COG and Skew /s/ - Kenni’s Results
+
+- Kenni's mean COG is 7018Hz in the queer-friendly setting and 5878Hz in the heteronormative setting, with a significant difference (t=5.9374, p<0.01). His COG is higher in the queer-friendly context. 
+- While his spectral skew is consistently positive in both settings, the /s/ tokens produced in the queer-friendly setting have a less positive skew compared to those in the heteronormative setting.
+
+```{r, out.width="85%", fig.align="center"}
+#| echo: false 
+#| warning: false 
+#| message: false
+knitr::include_graphics("/Users/diegomedina/Desktop/presentation/charts/Kenni_COG_1.png")
+```
+---
+```{r, out.width="85%", fig.align="center"}
+#| echo: false 
+#| warning: false 
+#| message: false
+knitr::include_graphics("/Users/diegomedina/Desktop/presentation/charts/Kenni_COG_2.png")
+```
+
+---
+# <span style="color: red;">Results</span>
+## COG and Skew /s/ - Rui’s Results
+
+- Rui’s mean COG is 7016Hz in the queer-friendly setting and 5642Hz in the heteronormative setting (see Table 5 and Figure 4). His COG is significantly higher in the queer-friendly setting (t=12.04, p<0.01). 
+- His /s/ tokens are also more negatively skewed in the queer-friendly setting compared to the heteronormative setting.
+ 
+```{r, out.width="85%", fig.align="center"}
+#| echo: false 
+#| warning: false 
+#| message: false
+knitr::include_graphics("/Users/diegomedina/Desktop/presentation/charts/Rui_COG_1.png")
+```
+
+---
+```{r, out.width="85%", fig.align="center"}
+#| echo: false 
+#| warning: false 
+#| message: false
+knitr::include_graphics("/Users/diegomedina/Desktop/presentation/charts/Rui_COG_2.png")
+```
+
+---
+# <span style="color: red;">Discussion</span>
+- In both cases, variation of pitch and pitch range can be attributed to a range of factors
+in any given situation as pitch can hold a multiplicity of meanings (having business meetings vs teaching kids). 
+- In the context of the classroom, it is possible that Rui’s stylistic
+manipulation of pitch could be a way of achieving his pedagogical goals when he
+assumes the role of a teacher. This is different from Kenni's pitch manipulation.
+-	Rui and Kenni both show significantly higher COGs in queer-friendly settings compared to heteronormative professional settings, likely due to the salience of the fronted /s/ as a stereotypical feature of gay speech. 
+-	The pattern of fronting /s/ in queer-friendly settings suggests that both speakers adjust their speech depending on the security of the environment in expressing their sexualities. 
+---
+# <span style="color: red;">Conclusion</span>
+
+-	The authors interpret Kenni and Rui's style-shifting practices as a response to the widespread acceptance of heteronormativity in Singapore, which pressures LGBTQ+ individuals to adapt their linguistic behaviors. 
+-	Both speakers adjust their speech to mitigate the potential repercussions of openly expressing their gay identity in heteronormative spaces. 
+---
+#<span style="color: red;">Appropriateness/novelty of analysis</span>
+
+- The authors didn't specify the model they used, and they reported only t and p-values without further explanation. They also used box plots to show pitch distribution across contexts and speakers.
+
+- The issue I have with this paper is that, although the authors mention that participants self-recorded in each context, it's unclear whether they analyzed one or multiple recordings per context for each participant.
+
+###If they analyzed one recording per context for each participant...
+
+- One could use a linear model to assess how context (heteronormative vs. queer-friendly) and speaker (Rui vs. Kenni) affect pitch (mean, max, min, range), and whether there is an interaction between context and speaker.
+
+- Example code for mean f0:
+
+- model_f0 <- lm(mean_f0 ~ context * speaker, data = their_data)
+- summary(model_f0)
+---
+###If they analyzed multiple recordings per context for each participant...
+
+One could use a mixed-effects model to account for repeated measures. In this case, the model would include:
+
+- Context as a fixed effect (heteronormative vs. queer-friendly).
+
+- Speaker as a fixed effect (Rui vs. Kenni).
+
+- An interaction between context and speaker.
+
+- A random intercept for each speaker to account for individual differences in baseline pitch.
+
+Example code for this would be:
+
+- model_f0 <- lmer(mean_f0 ~ context * speaker + (1|speaker), data = their_data)
+- summary(model_f0)
+
+###Personal note
+
+- One could do the same for COG and Skew.
+---
+#<span style="color: red;">Presentation of results</span>
+
+- As previously mentioned, the authors did not specify the type of model they used, this leaves readers unclear about how the data in the different tables were derived. However, the results were still clear and logically consistent.
+
+- It was possible to observe how average F0, COG, and Skew varied across different contexts.
+
+- In some instances, where no significant differences were found across contexts, the authors provided explanations for how context might have influenced these patterns. For example, in the case of Rui’s pitch, which remained relatively consistent in both settings (teaching vs talking to friends), the authors noted that in the classroom environment, pitch and pitch range are arguably stronger indicators of expressiveness. Since pitch is a prosodic feature, it plays a crucial role in conveying the expressiveness of language.
+
+---
+##<span style="color: red;">The good, the bad, and the ugly</span>
+## The good
+The positive aspect of this study was that the authorssuccessfully achieve their objectives:
+
+- They contributed a valuable non-Western perspective on the stylistic construction of queer identities within both heteronormative and queer-friendly spaces.
+
+- They effectively demonstrated how the social meanings of linguistic features, such as fronted /s/ and pitch, are context-dependent and can be recontextualized within specific communities.
+
+- They made a significant contribution to conversations surrounding social justice and LGBTQ+ rights in Singapore, promoting acceptance and equality
+
+---
+## The bad
+While I don’t think these points are necessarily "bad," there are areas where the study could have been improved:
+
+- Increased sample size: A larger number of participants would have helped better account for stylistic variation.
+
+- More controlled tasks: The study could have benefitted from a more structured approach, such as asking participants to read specific materials in controlled settings.
+
+- Model choicet: A model that closely aligns with the study's objectives and the specific data collected would have helped improve the overall analysis.
+
+---
+## the ugly
+While I don’t think there is anything truly "ugly" about this study, there are a few issues that could have been addressed:
+
+- Lack of clarity on the model used: The authors did not specify the model they used or how they obtained their data, making it difficult for others to replicate the study. This lack of transparency could limit the reliability and reproducibility of the findings.
+
+- Unclear data extraction process: The study does not clarify from which parts of the recordings the data was extracted. It’s unclear whether they used a single recording per context for each participant or multiple recordings. 
+
+- Integration of qualitative and quantitative data: While the authors attempted to combine qualitative interview data with their quantitative results, the integration feels somewhat poor. It may have been more effective to split the article into two parts: one focusing on the quantitative analysis and the other on the qualitative analysis. This would have allowed for a more in-depth explanation of each approach and its findings.
+---
+#Thank you very much!
+
